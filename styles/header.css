@@ -1,0 +1,51 @@
+.logo{
+	width: 150px;
+}
+header{
+	z-index: 100;
+	position: fixed;
+	padding: 25px 35px;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.header-buttons{
+	column-gap: 13px;
+	display: flex;
+	align-items: start;
+}
+.language-button{
+	background-color: rgb(0,0,0);
+	color: rgb(255,255,255);
+	border: 1px solid rgb(95,95,95);
+	padding: 5px 12px;
+	font-size: 15px;
+	font-weight: 300;
+	border-radius: 17px;}
+.down-icon{
+	margin-left: 8px;
+}
+.sign-button{
+	background-color: rgb(255,255,255);
+	color: rgb(0,0,0);
+	border: none;
+	padding: 5px 12px;
+	border-radius: 17px;
+	font-size: 15px;
+	font-weight: 500;
+}
+.dropdown-language-menu{
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(255,255,255);
+	border-radius: 7px;
+	font-weight: 300;
+	pointer-events: none;
+	color: rgb(0,0,0);
+}
+.language-button:focus-within .dropdown-language-menu{
+	display: flex;
+}
